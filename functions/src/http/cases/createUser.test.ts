@@ -19,6 +19,6 @@ describe("create user", () => {
     const inputData = {name: "Valid Name"};
     addMock.mockResolvedValueOnce({id: "someValidId"});
     const result = await createUser(inputData);
-    expect(result).toEqual({name: inputData.name, success: true});
+    expect(result).toEqual({name: inputData.name, id: 'someValidId'});
   });
 });

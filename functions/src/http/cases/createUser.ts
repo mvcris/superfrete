@@ -5,11 +5,11 @@ type Input = {
 }
 
 type Output = {
-    name?: string;
-    success: boolean;
+    name: string,
+    id: string;
 }
 
 export const createUser = async ({name}: Input): Promise<Output> => {
-  await firestore.collection("users").add({name});
-  return {name, success: true};
+  const createdUser = await firestore.collection("users").add({name});
+  return {name, id: createdUser.id};
 };
