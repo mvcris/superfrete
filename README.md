@@ -16,8 +16,6 @@ Para os testes utilizei o jest.
 
 É necessário ter o emulador do [firebase](https://firebase.google.com/docs/emulator-suite) instalado.
 
-Install the dependencies and devDependencies and start the server.
-
 ```sh
 git clone https://github.com/mvcris/superfrete.git
 cd superfrete/functions
